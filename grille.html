@@ -14,10 +14,27 @@
               .crossword-flexbox {
                   display: flex;
 
-                  justify-self center;
+                  justify-self: center;
+                  flex-direction: column;
+                  
 
 
 
+              }
+              .emailcontainer {
+                  display: flex;
+                  flex-direction: column;
+                  align-self: flex-end;
+                  padding-right: 25%;
+                  padding-top: 40px;
+
+                  
+                 
+              }
+              .emailcontainer > * {
+                  background-color: #DDDDDD;
+                  border: 1px solid #0074D9;
+                  margin: 1px;
               }
               .crossword-container {
                   display:grid;
@@ -45,11 +62,11 @@
                       }
                       .rouge {
                           background-color: #FF4136 ;
-                          color: #ff4136;
+                          color: #ff4136 ;
                         }
                       .bleu {
-                          background-color: #0074D9;
-                          color: #0074d9; }
+                          background-color: #0074D9 ;
+                          color: #0074d9 ;}
     </style>
   </head>
   <body>
@@ -59,20 +76,20 @@
         <input type="text" maxlength="1" class="r1.c2" />
         <input type="text" maxlength="1" class="r1.c3" />
         <input type="text" maxlength="1" class="r1.c4" />
-        <input type="text" maxlength="0" class="r1.c5 bleu" value="!"/>
+        <input type="text" maxlength="0" class="r1.c5 bleu" value="!" readonly=""/>
         <input type="text" maxlength="1" class="r1.c6" />
         <input type="text" maxlength="1" class="r1.c7" />
         <input type="text" maxlength="1" class="r1.c8" />
         <input type="text" maxlength="1" class="r1.c9" />
-        <input type="text" maxlength="0" class="r1.c10 rouge" value="!" />
+        <input type="text" maxlength="0" class="r1.c10 rouge" value="!"/>
         <input type="text" maxlength="1" class="r1.c11" />
         <input type="text" maxlength="1" class="r1.c12" />
         <input type="text" maxlength="1" class="r2.c1" />
-        <input type="text" maxlength="0" class="r2.c2 bleu" value="!" />
+        <input type="text" maxlength="0" class="r2.c2 bleu" value="!"  />
         <input type="text" maxlength="1" class="r2.c3" />
         <input type="text" maxlength="1" class="r2.c4" />
         <input type="text" maxlength="0" class="r2.c5 rouge" value="!" />
-        <input type="text" maxlength="0" class="r2.c6 rouge" value="!"/>
+        <input type="text" maxlength="0" class="r2.c6 rouge" value="!" />
         <input type="text" maxlength="1" class="r2.c7" />
         <input type="text" maxlength="1" class="r2.c8" />
         <input type="text" maxlength="1" class="r2.c9" />
@@ -84,10 +101,10 @@
         <input type="text" maxlength="1" class="r3.c3" />
         <input type="text" maxlength="1" class="r3.c4" />
         <input type="text" maxlength="1" class="r3.c5" />
-        <input type="text" maxlength="0" class="r3.c6 bleu" value="!"/>
+        <input type="text" maxlength="0" class="r3.c6 bleu" value="!" />
         <input type="text" maxlength="1" class="r3.c7" />
         <input type="text" maxlength="1" class="r3.c8" />
-        <input type="text" maxlength="0" class="r3.c9 bleu" value="!"/>
+        <input type="text" maxlength="0" class="r3.c9 bleu" value="!" />
         <input type="text" maxlength="1" class="r3.c10" />
         <input type="text" maxlength="1" class="r3.c11" />
         <input type="text" maxlength="1" class="r3.c12" />
@@ -97,11 +114,11 @@
         <input type="text" maxlength="1" class="r4.c4" />
         <input type="text" maxlength="1" class="r4.c5" />
         <input type="text" maxlength="1" class="r4.c6" />
-        <input type="text" maxlength="0" class="r4.c7 rouge" value="!"/>
+        <input type="text" maxlength="0" class="r4.c7 rouge" value="!" />
         <input type="text" maxlength="1" class="r4.c8" />
         <input type="text" maxlength="1" class="r4.c9" />
         <input type="text" maxlength="1" class="r4.c10" />
-        <input type="text" maxlength="0" class="r4.c11 rouge" value="!"/>
+        <input type="text" maxlength="0" class="r4.c11 rouge" value="!" />
         <input type="text" maxlength="1" class="r4.c12" />
         <input type="text" maxlength="1" class="r5.c1" />
         <input type="text" maxlength="1" class="r5.c2" />
@@ -111,15 +128,15 @@
         <input type="text" maxlength="1" class="r5.c6" />
         <input type="text" maxlength="1" class="r5.c7" />
         <input type="text" maxlength="1" class="r5.c8" />
-        <input type="text" maxlength="0" class="r5.c9 bleu" value="!"/>
+        <input type="text" maxlength="0" class="r5.c9 bleu" value="!" />
         <input type="text" maxlength="1" class="r5.c10" />
         <input type="text" maxlength="1" class="r5.c11" />
         <input type="text" maxlength="1" class="r5.c12" />
         <input type="text" maxlength="1" class="r6.c1" />
         <input type="text" maxlength="0" class="r6.c2 rouge" value="!" />
-        <input type="text" maxlength="0" class="r6.c3 bleu" value="!"/>
+        <input type="text" maxlength="0" class="r6.c3 bleu" value="!" />
         <input type="text" maxlength="1" class="r6.c4" />
-        <input type="text" maxlength="0" class="r6.c5 rouge" value="!"/>
+        <input type="text" maxlength="0" class="r6.c5 rouge" value="!" />
         <input type="text" maxlength="1" class="r6.c6" />
         <input type="text" maxlength="1" class="r6.c7" />
         <input type="text" maxlength="1" class="r6.c8" />
@@ -134,7 +151,7 @@
         <input type="text" maxlength="1" class="r7.c5" />
         <input type="text" maxlength="1" class="r7.c6" />
         <input type="text" maxlength="1" class="r7.c7" />
-        <input type="text" maxlength="0" class="r7.c8 rouge" value="!"/>
+        <input type="text" maxlength="0" class="r7.c8 rouge" value="!" />
         <input type="text" maxlength="1" class="r7.c9" />
         <input type="text" maxlength="1" class="r7.c10" />
         <input type="text" maxlength="1" class="r7.c11" />
@@ -148,10 +165,10 @@
         <input type="text" maxlength="1" class="r8.c7" />
         <input type="text" maxlength="1" class="r8.c8" />
         <input type="text" maxlength="0" class="r8.c9 bleu" value="!" />
-        <input type="text" maxlength="0" class="r8.c10 rouge" value="!"/>
+        <input type="text" maxlength="0" class="r8.c10 rouge" value="!" />
         <input type="text" maxlength="1" class="r8.c11" />
         <input type="text" maxlength="1" class="r8.c12" />
-        <input type="text" maxlength="0" class="r9.c1 rouge" value="!"/>
+        <input type="text" maxlength="0" class="r9.c1 rouge" value="!" />
         <input type="text" maxlength="1" class="r9.c2" />
         <input type="text" maxlength="1" class="r9.c3" />
         <input type="text" maxlength="1" class="r9.c4" />
@@ -161,18 +178,18 @@
         <input type="text" maxlength="1" class="r9.c8" />
         <input type="text" maxlength="1" class="r9.c9" />
         <input type="text" maxlength="1" class="r9.c10" />
-        <input type="text" maxlength="0" class="r9.c11 bleu" value="!"/>
+        <input type="text" maxlength="0" class="r9.c11 bleu" value="!" />
         <input type="text" maxlength="1" class="r9.c12" />
         <input type="text" maxlength="1" class="r10.c1" />
-        <input type="text" maxlength="0" class="r10.c2 bleu" value="!"/>
-        <input type="text" maxlength="0" class="r10.c3 bleu" value="!"/>
+        <input type="text" maxlength="0" class="r10.c2 bleu" value="!" />
+        <input type="text" maxlength="0" class="r10.c3 bleu" value="!" />
         <input type="text" maxlength="1" class="r10.c4" />
         <input type="text" maxlength="1" class="r10.c5" />
         <input type="text" maxlength="1" class="r10.c6" />
         <input type="text" maxlength="1" class="r10.c7" />
         <input type="text" maxlength="1" class="r10.c8" />
         <input type="text" maxlength="1" class="r10.c9" />
-        <input type="text" maxlength="10" class="r10.c10 rouge" value="!"/>
+        <input type="text" maxlength="10" class="r10.c10 rouge" value="!" />
         <input type="text" maxlength="1" class="r10.c11" />
         <input type="text" maxlength="1" class="r10.c12" />
         <input type="text" maxlength="1" class="r11.c1" />
@@ -180,7 +197,7 @@
         <input type="text" maxlength="1" class="r11.c3" />
         <input type="text" maxlength="0" class="r11.c4 rouge" value="!" />
         <input type="text" maxlength="1" class="r11.c5" />
-        <input type="text" maxlength="0" class="r11.c6 bleu" value="!"/>
+        <input type="text" maxlength="0" class="r11.c6 bleu" value="!" />
         <input type="text" maxlength="1" class="r11.c7" />
         <input type="text" maxlength="1" class="r11.c8" />
         <input type="text" maxlength="1" class="r11.c9" />
@@ -196,11 +213,17 @@
         <input type="text" maxlength="1" class="r12.c7" />
         <input type="text" maxlength="1" class="r12.c8" />
         <input type="text" maxlength="1" class="r12.c9" />
-        <input type="text" maxlength="0" class="r12.c10 bleu" value="!"/>
+        <input type="text" maxlength="0" class="r12.c10 bleu" value="!" />
         <input type="text" maxlength="1" class="r12.c11" />
         <input type="text" maxlength="1" class="r12.c12" />
       </div>
-    </div>
+      <form action="mailto:vwblues55@gmail.com"  class="emailcontainer" method="post" enctype="text/plain">
+      <input type="text" class="nom" value="Nom">
+      <input type="text" class="email" value="email@email.com">
+      <input type="submit" class="envoye" value="envoye le resultat">
+    </form>
+    
+      </div>
     <script>
       const reponse = {
         r1: {
@@ -371,24 +394,39 @@
           c11: "e",
           c12: "s"
         }
-      }
+      };
 
       var allcase = document.querySelectorAll(".crossword-container > input");
+      const btnsend =  document.querySelector(".envoye");
+      btnsend.disabled = true;
 
-      allcase.forEach(el =>
-        el.addEventListener("input", function() {
-            
-            
-            if (this.value.toLowerCase() == getDescendantProp(reponse, this.className)) {
-                this.style.color = "red";
-                this.readOnly = "true";
-            }
-        }))
-        function getDescendantProp(obj, desc) {
-    var arr = desc.split(".");
-    while(arr.length && (obj = obj[arr.shift()]));
-    return obj;
+    
+      allcase.forEach(function(ze) {
+      if(ze.classList.contains('rouge') || ze.classList.contains('bleu')) { ze.readOnly = "true"; } ;
+      })
+
+      allcase.forEach(el => el.addEventListener("input", function() {
+          if (this.value.toLowerCase() == getDescendantProp(reponse, this.className)) {
+            this.style.color = "red";
+            this.readOnly = "true";
+            if (checkWin() == true); {
+                btnsend.disabled = false;
+                alert('Terminé, envoyez votre resultat') ;} 
+      ;}}));
+
+      function getDescendantProp(obj, desc) {
+        var arr = desc.split(".");
+        while (arr.length && (obj = obj[arr.shift()]));
+        return obj;
+      }
+
+    function checkWin() {
+    allrep = Array.from(allcase);
+    return allrep.every(element => element.readOnly == true);
 }
+
+
+
     </script>
   </body>
 </html>
