@@ -22,7 +22,7 @@
           "header header header header"
           "lac lac . ."
           "hints hints h1-12 crossword"
-          ". . . submit"
+          ". lienreponse . submit"
           "footer footer footer footer";
       }
       .titre {
@@ -140,6 +140,11 @@
             align-items: center;
             flex-direction: column;
         }
+        .linkreponse {
+            grid-area: lienreponse;
+            display: flex;
+            align-items: center;
+        }
     
     </style>
   </head>
@@ -152,6 +157,7 @@
             <h2 style="color: #0074d9">dans le cadre de la Francofête 2020</h2>
 
         </div>
+        <a class="linkreponse" href="">Veuillez télécharger la feuille réponse après avoir réussi.</a> 
         <div class="laccontainer">
         <img src="http://tny.im/llp" alt="" class="icon">
         <div class=lacstjeancontainer">
@@ -587,6 +593,7 @@
 
       var allcase = document.querySelectorAll(".crossword-container > input");
       const btnsend = document.querySelector(".envoye");
+      var link_reponse = document.querySelector(".linkreponse");
       btnsend.disabled = true;
 
       allcase.forEach(function(ze) {
@@ -605,7 +612,8 @@
             this.readOnly = "true";
             if (checkWin() == true) {
               btnsend.disabled = false;
-              alert("Terminé, envoyez votre resultat");
+              link_reponse.href = "adresse du pdf";
+             
             }
           }
         })
