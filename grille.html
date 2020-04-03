@@ -16,13 +16,21 @@
 
         justify-self: center;
         flex-direction: column;
-        grid-template-columns: 1fr 1fr 1fr 2fr;
-        grid-template-rows: 2fr 4fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 0.2fr 2fr;
+        grid-template-rows: 1.2fr 0.5fr 4.5fr 1fr 2fr;
         grid-template-areas: 
           "header header header header"
+          "lac lac . ."
           "hints hints h1-12 crossword"
           ". . . submit"
           "footer footer footer footer";
+      }
+      .titre {
+          grid-area: header;
+          color: #FF4136 ;
+          font-size: 45px;
+          display: flex;
+          justify-self: center;
       }
       .v1-v12 {
         display: flex;
@@ -30,27 +38,37 @@
         justify-items: center;
         justify-self: center;
         justify-content: center;
-        margin: 1px;
+        margin: -5px;
         grid-area: crossword;
       }
       .v1-v12 > * {
         font-size: 20px;
         width: 60px;
         height: 30px;
-        text-transform: uppercase bold;
+        text-transform: uppercase;
 
         text-align: center;
       }
       .h1-h12 {
-          display: flex;
-          flex-direction: row;
-        grid-area: h1-12;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  grid-area: h1-12;
+}
+.h1-h12 > * {
+  font-size: 20px;
+  width: 45px;
+  height: 40px;
+  
+  align-self: flex-end;
       }
+    
 
       .emailcontainer {
         display: flex;
         flex-direction: column;
         align-self: flex-end;
+        justify-self: center;
         padding-right: 25%;
         padding-top: 40px;
         grid-area: submit;
@@ -58,7 +76,8 @@
       .emailcontainer > * {
         background-color: #dddddd;
         border: 1px solid #0074d9;
-        margin: 1px;
+        margin: 3px;
+        width: 350px;
       }
       .crossword-container {
         display: grid;
@@ -87,11 +106,122 @@
         background-color: #0074d9;
         color: #0074d9;
       }
+      .laccontainer {
+          grid-area: lac;
+          display: flex;
+          flex-direction: row;
+      }
+      .lacstjean {
+          
+          display: flex;
+          margin-left: 20px;
+      }
+.icon {
+    display: flex;
+  width: 80px;
+  height: 60px;
+  align-self: center;
+  
+}
+.hintcontainer {
+    grid-area: hints;
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    font-family: verdana;
+}
+.row1 {
+    flex: 1;}
+    .row2 {
+        flex: 1;}
+        .footercontainer {
+            grid-area: footer;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
     
     </style>
   </head>
   <body>
     <div class="crossword-flexbox">
+        <h1 class="titre">TOURISMOTS CROISÉS 2020</h1>
+        <div class="footercontainer">
+            <h1 style="color: #ff4136">TOURISMOTS CROISÉS</h1>
+            <h2 style="color: #0074d9">Jeu linguistique du Réseau Québec-France</h2>
+            <h2 style="color: #0074d9">dans le cadre de la Francofête 2020</h2>
+
+        </div>
+        <div class="laccontainer">
+        <img src="http://tny.im/llp" alt="" class="icon">
+        <div class=lacstjeancontainer">
+        <p class="lacstjean" style="font-size: 25px"><b>Ville et région en vedette</b></p>
+        <p class="lacstjean" style="font-size:15px">Ville de Saguenay et le Saguenay‒Lac-Saint-Jean</p>
+            </div>
+        </div>
+        <div class="hintcontainer">
+            <div class="row1">
+            <p class="hints" style="font-size: 12px"><b>Horizontal</b></p>
+            <p class="hints">1- ..marin du Saguenay Saint-Laurent<br>
+                - bord de la rivière<br>
+                - abréviation familière de c'est correct
+            </p>
+            <p class="hints">2-interjection d'étonnement ou d'indignation<br>
+                -ancienne ville du Saguenay classée quartier
+                historique en 2014</p>
+            <p class="hints">3 - prénom d'un Tremblay, humoriste saguenéen<br>
+                - symbole du préfixe déca-<br>
+                - chef militaire ottoman</p>
+            <p class="hints">4 - net<br>
+                - une parmi d'autres à Saint-Gédéon (Lac-Saint-Jean)</p>
+            <p class="hints">5 - action d'enlever l'eau imprégnée dans un chiffon<br>
+                - jeu vidéo d'action, d'aventure et de survie</p>
+            <p class="hints">6 - navré</p>
+            <p class="hints">7 - apprendre à quelqu'un les bases d'un art<br>
+                - rapport de l'argent avec la guerre</p>
+            <p class="hints">8 - mot utilisé au terme d'une longue attente<br>
+                - interjection de surprise<br>
+                - sigle de l'ordre des Jésuites</p>
+            <p class="hints">9 - orchestre symphonique de renommée mondiale<br>
+                - utilise</p>
+            <p class="hints">10 - bande de terre entre deux plans d'eau<br>
+                - terminaison des verbes des 2 e et 3 e groupes</p>
+            <p class="hints">11 - il lui manque un s pour signifier un vif regret</p>
+            <p class="hints">12 - arrondissement urbain, ville de Saguenay<br>
+                -    en matière de</p>
+        </div>
+            <div class="row2">
+                <p class="hints" style="font-size: 12px"><b>Vertical</b></p>
+                <p class="hints">1 - théâtre d'été à Saguenay<br>
+                    - touche du clavier (abréviation)</p>
+                <p class="hints">2 - métal précieux au pluriel <br>
+                    - abréviation d'un des huit vents collatéraux</p>
+                <p class="hints">3 - permet à un véhicule de rouler sur les routes<br>
+                    - conifères décoratifs<br>
+                    - initiales de la mairesse, ville de Saguenay</p>
+                <p class="hints">4 - arrondissement ou hôtel, ville de Saguenay</p>
+                <p class="hints">5 - titre honorifique <br>
+                    - à la mode (anglicisme, langue familière) <br>
+                    - pauvre (sans le ...)</p>
+                <p class="hints">6 - marquis célèbre<br>
+                    - conjonction de liaison</p>
+                <p class="hints">7 - invalidité absolue et définitive (sigle)<br>
+                    - dirige, mène<br>
+                    - heure</p>
+                <p class="hints">8 - réelles<br>
+                    - sentir l'air frais sur le pont d'un bateau</p>
+                <p class="hints">9 - électrovolt<br>
+                    - pronom indéfini<br>
+                    - elle récolte ce qu'elle...</p>
+                <p class="hints">10 - température ayant les qualités souhaitables</p>
+                <p class="hints">11 - poème lyrique<br>
+                    - réseaux d'échanges en France<br>
+                    - colère</p>
+                <p class="hints">12 - embarcation légère sur la rivière Saguenay<br>
+                    - vallées glaciaires</p>
+
+            </div>
+        </div>
       <div class="v1-v12">
         <div class="v1">v1</div>
         <div class="v2">v2</div>
@@ -107,6 +237,7 @@
         <div class="v12">v12</div>
       </div>
       <div class="h1-h12">
+          <div class="h0"></div>
           <div class="h1">H1</div>
           <div class="h2">H2</div>
           <div class="h3">H3</div>
@@ -277,9 +408,9 @@
         class="emailcontainer"
         method="POST"
       >
-        <input type="text" class="nom" value="Nom" name="name" />
-        <input type="text" class="email" value="email@email.com" name="email" />
-        <input type="submit" class="envoye" value="envoye le resultat" />
+        <input type="text" class="nom" value="Prenom et Nom" name="name" />
+        <input type="text" class="email" value="votre@email.com" name="email" />
+        <input type="submit" class="envoye" value="Envoyer le resultat" />
       </form>
     </div>
     <script>
