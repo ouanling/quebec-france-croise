@@ -14,9 +14,9 @@
         align-self: center;
         justify-content: center;
         width: 1763px;
-        font-family:  verdana;
+        font-family: verdana;
         font-size: 16px;
-        -webkit-text-size-adjust:none;
+        -webkit-text-size-adjust: none;
       }
 
       .crossword-flexbox {
@@ -31,7 +31,7 @@
           "header header header header"
           "lac lac . ."
           "hints hints h1-12 crossword"
-          ". lienreponse . submit"
+          ". . . submit"
           "footer footer footer footer";
       }
       .titre {
@@ -163,9 +163,9 @@
         <h2 style="color: #0074d9">Jeu linguistique du Réseau Québec-France</h2>
         <h2 style="color: #0074d9">dans le cadre de la Francofête 2020</h2>
       </div>
-      <a class="linkreponse" href="feuille reponse"
+      <!--<a class="linkreponse" href="feuille reponse"
         >Veuillez télécharger la feuille réponse après avoir réussi.</a
-      >
+      > -->
       <div class="laccontainer">
         <img src="http://tny.im/llp" alt="" class="icon" />
         <div class=lacstjeancontainer">
@@ -460,14 +460,19 @@
       <input type="text" maxlength="1" class="r12.c11" />
       <input type="text" maxlength="1" class="r12.c12" />
     </div>
-    <form
+    <!-- <form
       action="https://formspree.io/xgeleljn"
       class="emailcontainer"
       method="POST"
     >
-      <input type="text" class="nom" value="Prenom et Nom" name="name" />
-      <input type="text" class="email" value="votre@email.com" name="email" />
-      <input type="submit" class="envoye" value="Envoyer le resultat" />
+      //<input type="text" class="nom" value="Prenom et Nom" name="name" />
+     // <input type="text" class="email" value="votre@email.com" name="email" /> -->
+    <form action="https://imgur.com/N8Xqw1L" class="emailcontainer">
+      <input
+        type="submit"
+        class="envoye"
+        value="Télécharger la grille réponse"
+      />
     </form>
 
     <script>
@@ -644,7 +649,7 @@
 
       var allcase = document.querySelectorAll(".crossword-container > input");
       const btnsend = document.querySelector(".envoye");
-      var link_reponse = document.querySelector(".linkreponse");
+      //var link_reponse = document.querySelector(".linkreponse");
       btnsend.disabled = true;
 
       allcase.forEach(function(ze) {
@@ -663,7 +668,7 @@
             this.readOnly = "true";
             if (checkWin() == true) {
               btnsend.disabled = false;
-              link_reponse.href = "adresse du pdf";
+              //link_reponse.href = "adresse du pdf";
             }
           }
         })
