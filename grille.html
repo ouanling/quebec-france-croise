@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <style>
-      
       .crossword-flexbox {
         display: grid;
         width: 80%;
@@ -18,7 +17,7 @@
         flex-direction: column;
         grid-template-columns: 1fr 1fr 0.2fr 2fr;
         grid-template-rows: 1.2fr 0.5fr 4.5fr 1fr 2fr;
-        grid-template-areas: 
+        grid-template-areas:
           "header header header header"
           "lac lac . ."
           "hints hints h1-12 crossword"
@@ -26,11 +25,11 @@
           "footer footer footer footer";
       }
       .titre {
-          grid-area: header;
-          color: #FF4136 ;
-          font-size: 45px;
-          display: flex;
-          justify-self: center;
+        grid-area: header;
+        color: #ff4136;
+        font-size: 45px;
+        display: flex;
+        justify-self: center;
       }
       .v1-v12 {
         display: flex;
@@ -50,19 +49,18 @@
         text-align: center;
       }
       .h1-h12 {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  grid-area: h1-12;
-}
-.h1-h12 > * {
-  font-size: 20px;
-  width: 45px;
-  height: 40px;
-  
-  align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        grid-area: h1-12;
       }
-    
+      .h1-h12 > * {
+        font-size: 20px;
+        width: 45px;
+        height: 40px;
+
+        align-self: flex-end;
+      }
 
       .emailcontainer {
         display: flex;
@@ -107,318 +105,361 @@
         color: #0074d9;
       }
       .laccontainer {
-          grid-area: lac;
-          display: flex;
-          flex-direction: row;
+        grid-area: lac;
+        display: flex;
+        flex-direction: row;
       }
       .lacstjean {
-          
-          display: flex;
-          margin-left: 20px;
+        display: flex;
+        margin-left: 20px;
       }
-.icon {
-    display: flex;
-  width: 80px;
-  height: 60px;
-  align-self: center;
-  
-}
-.hintcontainer {
-    grid-area: hints;
-    display: flex;
-    flex-direction: row;
-    font-size: 11px;
-    font-family: verdana;
-}
-.row1 {
-    flex: 1;}
-    .row2 {
-        flex: 1;}
-        .footercontainer {
-            grid-area: footer;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        .linkreponse {
-            grid-area: lienreponse;
-            display: flex;
-            align-items: center;
-        }
-    
+      .icon {
+        display: flex;
+        width: 80px;
+        height: 60px;
+        align-self: center;
+      }
+      .hintcontainer {
+        grid-area: hints;
+        display: flex;
+        flex-direction: row;
+        font-size: 11px;
+        font-family: verdana;
+      }
+      .row1 {
+        flex: 1;
+      }
+      .row2 {
+        flex: 1;
+      }
+      .footercontainer {
+        grid-area: footer;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .linkreponse {
+        grid-area: lienreponse;
+        display: flex;
+        align-items: center;
+      }
     </style>
   </head>
   <body>
     <div class="crossword-flexbox">
-        <h1 class="titre">TOURISMOTS CROISÉS 2020</h1>
-        <div class="footercontainer">
-            <h1 style="color: #ff4136">TOURISMOTS CROISÉS</h1>
-            <h2 style="color: #0074d9">Jeu linguistique du Réseau Québec-France</h2>
-            <h2 style="color: #0074d9">dans le cadre de la Francofête 2020</h2>
-
-        </div>
-        <a class="linkreponse" href="">Veuillez télécharger la feuille réponse après avoir réussi.</a> 
-        <div class="laccontainer">
-        <img src="http://tny.im/llp" alt="" class="icon">
-        <div class=lacstjeancontainer">
-        <p class="lacstjean" style="font-size: 25px"><b>Ville et région en vedette</b></p>
-        <p class="lacstjean" style="font-size:15px">Ville de Saguenay et le Saguenay‒Lac-Saint-Jean</p>
-            </div>
-        </div>
-        <div class="hintcontainer">
-            <div class="row1">
-            <p class="hints" style="font-size: 12px"><b>Horizontal</b></p>
-            <p class="hints">1- ..marin du Saguenay Saint-Laurent<br>
-                - bord de la rivière<br>
-                - abréviation familière de c'est correct
-            </p>
-            <p class="hints">2-interjection d'étonnement ou d'indignation<br>
-                -ancienne ville du Saguenay classée quartier
-                historique en 2014</p>
-            <p class="hints">3 - prénom d'un Tremblay, humoriste saguenéen<br>
-                - symbole du préfixe déca-<br>
-                - chef militaire ottoman</p>
-            <p class="hints">4 - net<br>
-                - une parmi d'autres à Saint-Gédéon (Lac-Saint-Jean)</p>
-            <p class="hints">5 - action d'enlever l'eau imprégnée dans un chiffon<br>
-                - jeu vidéo d'action, d'aventure et de survie</p>
-            <p class="hints">6 - navré</p>
-            <p class="hints">7 - apprendre à quelqu'un les bases d'un art<br>
-                - rapport de l'argent avec la guerre</p>
-            <p class="hints">8 - mot utilisé au terme d'une longue attente<br>
-                - interjection de surprise<br>
-                - sigle de l'ordre des Jésuites</p>
-            <p class="hints">9 - orchestre symphonique de renommée mondiale<br>
-                - utilise</p>
-            <p class="hints">10 - bande de terre entre deux plans d'eau<br>
-                - terminaison des verbes des 2 e et 3 e groupes</p>
-            <p class="hints">11 - il lui manque un s pour signifier un vif regret</p>
-            <p class="hints">12 - arrondissement urbain, ville de Saguenay<br>
-                -    en matière de</p>
-        </div>
-            <div class="row2">
-                <p class="hints" style="font-size: 12px"><b>Vertical</b></p>
-                <p class="hints">1 - théâtre d'été à Saguenay<br>
-                    - touche du clavier (abréviation)</p>
-                <p class="hints">2 - métal précieux au pluriel <br>
-                    - abréviation d'un des huit vents collatéraux</p>
-                <p class="hints">3 - permet à un véhicule de rouler sur les routes<br>
-                    - conifères décoratifs<br>
-                    - initiales de la mairesse, ville de Saguenay</p>
-                <p class="hints">4 - arrondissement ou hôtel, ville de Saguenay</p>
-                <p class="hints">5 - titre honorifique <br>
-                    - à la mode (anglicisme, langue familière) <br>
-                    - pauvre (sans le ...)</p>
-                <p class="hints">6 - marquis célèbre<br>
-                    - conjonction de liaison</p>
-                <p class="hints">7 - invalidité absolue et définitive (sigle)<br>
-                    - dirige, mène<br>
-                    - heure</p>
-                <p class="hints">8 - réelles<br>
-                    - sentir l'air frais sur le pont d'un bateau</p>
-                <p class="hints">9 - électrovolt<br>
-                    - pronom indéfini<br>
-                    - elle récolte ce qu'elle...</p>
-                <p class="hints">10 - température ayant les qualités souhaitables</p>
-                <p class="hints">11 - poème lyrique<br>
-                    - réseaux d'échanges en France<br>
-                    - colère</p>
-                <p class="hints">12 - embarcation légère sur la rivière Saguenay<br>
-                    - vallées glaciaires</p>
-
-            </div>
-        </div>
-      <div class="v1-v12">
-        <div class="v1">v1</div>
-        <div class="v2">v2</div>
-        <div class="v3">v3</div>
-        <div class="v4">v4</div>
-        <div class="v5">v5</div>
-        <div class="v6">v6</div>
-        <div class="v7">v7</div>
-        <div class="v8">v8</div>
-        <div class="v9">v9</div>
-        <div class="v10">v10</div>
-        <div class="v11">v11</div>
-        <div class="v12">v12</div>
+      <h1 class="titre">TOURISMOTS CROISÉS 2020</h1>
+      <div class="footercontainer">
+        <h1 style="color: #ff4136">TOURISMOTS CROISÉS</h1>
+        <h2 style="color: #0074d9">Jeu linguistique du Réseau Québec-France</h2>
+        <h2 style="color: #0074d9">dans le cadre de la Francofête 2020</h2>
       </div>
-      <div class="h1-h12">
-          <div class="h0"></div>
-          <div class="h1">H1</div>
-          <div class="h2">H2</div>
-          <div class="h3">H3</div>
-          <div class="h4">H4</div>
-          <div class="h5">H5</div>
-          <div class="h6">H6</div>
-          <div class="h7">H7</div>
-          <div class="h8">H8</div>
-          <div class="h9">H9</div>
-          <div class="h10">H10</div>
-          <div class="h11">H11</div>
-          <div class="h12">H12</div>
-      </div>
-      <div class="crossword-container">
-        <input type="text" maxlength="1" class="r1.c1" />
-        <input type="text" maxlength="1" class="r1.c2" />
-        <input type="text" maxlength="1" class="r1.c3" />
-        <input type="text" maxlength="1" class="r1.c4" />
-        <input
-          type="text"
-          maxlength="0"
-          class="r1.c5 bleu"
-          value="!"
-          readonly=""
-        />
-        <input type="text" maxlength="1" class="r1.c6" />
-        <input type="text" maxlength="1" class="r1.c7" />
-        <input type="text" maxlength="1" class="r1.c8" />
-        <input type="text" maxlength="1" class="r1.c9" />
-        <input type="text" maxlength="0" class="r1.c10 rouge" value="!" />
-        <input type="text" maxlength="1" class="r1.c11" />
-        <input type="text" maxlength="1" class="r1.c12" />
-        <input type="text" maxlength="1" class="r2.c1" />
-        <input type="text" maxlength="0" class="r2.c2 bleu" value="!" />
-        <input type="text" maxlength="1" class="r2.c3" />
-        <input type="text" maxlength="1" class="r2.c4" />
-        <input type="text" maxlength="0" class="r2.c5 rouge" value="!" />
-        <input type="text" maxlength="0" class="r2.c6 rouge" value="!" />
-        <input type="text" maxlength="1" class="r2.c7" />
-        <input type="text" maxlength="1" class="r2.c8" />
-        <input type="text" maxlength="1" class="r2.c9" />
-        <input type="text" maxlength="1" class="r2.c10" />
-        <input type="text" maxlength="1" class="r2.c11" />
-        <input type="text" maxlength="1" class="r2.c12" />
-        <input type="text" maxlength="1" class="r3.c1" />
-        <input type="text" maxlength="1" class="r3.c2" />
-        <input type="text" maxlength="1" class="r3.c3" />
-        <input type="text" maxlength="1" class="r3.c4" />
-        <input type="text" maxlength="1" class="r3.c5" />
-        <input type="text" maxlength="0" class="r3.c6 bleu" value="!" />
-        <input type="text" maxlength="1" class="r3.c7" />
-        <input type="text" maxlength="1" class="r3.c8" />
-        <input type="text" maxlength="0" class="r3.c9 bleu" value="!" />
-        <input type="text" maxlength="1" class="r3.c10" />
-        <input type="text" maxlength="1" class="r3.c11" />
-        <input type="text" maxlength="1" class="r3.c12" />
-        <input type="text" maxlength="1" class="r4.c1" />
-        <input type="text" maxlength="1" class="r4.c2" />
-        <input type="text" maxlength="1" class="r4.c3" />
-        <input type="text" maxlength="1" class="r4.c4" />
-        <input type="text" maxlength="1" class="r4.c5" />
-        <input type="text" maxlength="1" class="r4.c6" />
-        <input type="text" maxlength="0" class="r4.c7 rouge" value="!" />
-        <input type="text" maxlength="1" class="r4.c8" />
-        <input type="text" maxlength="1" class="r4.c9" />
-        <input type="text" maxlength="1" class="r4.c10" />
-        <input type="text" maxlength="0" class="r4.c11 rouge" value="!" />
-        <input type="text" maxlength="1" class="r4.c12" />
-        <input type="text" maxlength="1" class="r5.c1" />
-        <input type="text" maxlength="1" class="r5.c2" />
-        <input type="text" maxlength="1" class="r5.c3" />
-        <input type="text" maxlength="1" class="r5.c4" />
-        <input type="text" maxlength="1" class="r5.c5" />
-        <input type="text" maxlength="1" class="r5.c6" />
-        <input type="text" maxlength="1" class="r5.c7" />
-        <input type="text" maxlength="1" class="r5.c8" />
-        <input type="text" maxlength="0" class="r5.c9 bleu" value="!" />
-        <input type="text" maxlength="1" class="r5.c10" />
-        <input type="text" maxlength="1" class="r5.c11" />
-        <input type="text" maxlength="1" class="r5.c12" />
-        <input type="text" maxlength="1" class="r6.c1" />
-        <input type="text" maxlength="0" class="r6.c2 rouge" value="!" />
-        <input type="text" maxlength="0" class="r6.c3 bleu" value="!" />
-        <input type="text" maxlength="1" class="r6.c4" />
-        <input type="text" maxlength="0" class="r6.c5 rouge" value="!" />
-        <input type="text" maxlength="1" class="r6.c6" />
-        <input type="text" maxlength="1" class="r6.c7" />
-        <input type="text" maxlength="1" class="r6.c8" />
-        <input type="text" maxlength="1" class="r6.c9" />
-        <input type="text" maxlength="1" class="r6.c10" />
-        <input type="text" maxlength="1" class="r6.c11" />
-        <input type="text" maxlength="0" class="r6.c12 bleu" value="!" />
-        <input type="text" maxlength="1" class="r7.c1" />
-        <input type="text" maxlength="1" class="r7.c2" />
-        <input type="text" maxlength="1" class="r7.c3" />
-        <input type="text" maxlength="1" class="r7.c4" />
-        <input type="text" maxlength="1" class="r7.c5" />
-        <input type="text" maxlength="1" class="r7.c6" />
-        <input type="text" maxlength="1" class="r7.c7" />
-        <input type="text" maxlength="0" class="r7.c8 rouge" value="!" />
-        <input type="text" maxlength="1" class="r7.c9" />
-        <input type="text" maxlength="1" class="r7.c10" />
-        <input type="text" maxlength="1" class="r7.c11" />
-        <input type="text" maxlength="1" class="r7.c12" />
-        <input type="text" maxlength="1" class="r8.c1" />
-        <input type="text" maxlength="1" class="r8.c2" />
-        <input type="text" maxlength="1" class="r8.c3" />
-        <input type="text" maxlength="1" class="r8.c4" />
-        <input type="text" maxlength="1" class="r8.c5" />
-        <input type="text" maxlength="0" class="r8.c6 bleu" value="!" />
-        <input type="text" maxlength="1" class="r8.c7" />
-        <input type="text" maxlength="1" class="r8.c8" />
-        <input type="text" maxlength="0" class="r8.c9 bleu" value="!" />
-        <input type="text" maxlength="0" class="r8.c10 rouge" value="!" />
-        <input type="text" maxlength="1" class="r8.c11" />
-        <input type="text" maxlength="1" class="r8.c12" />
-        <input type="text" maxlength="0" class="r9.c1 rouge" value="!" />
-        <input type="text" maxlength="1" class="r9.c2" />
-        <input type="text" maxlength="1" class="r9.c3" />
-        <input type="text" maxlength="1" class="r9.c4" />
-        <input type="text" maxlength="0" class="r9.c5 bleu" value="!" />
-        <input type="text" maxlength="1" class="r9.c6" />
-        <input type="text" maxlength="0" class="r9.c7 rouge" value="!" />
-        <input type="text" maxlength="1" class="r9.c8" />
-        <input type="text" maxlength="1" class="r9.c9" />
-        <input type="text" maxlength="1" class="r9.c10" />
-        <input type="text" maxlength="0" class="r9.c11 bleu" value="!" />
-        <input type="text" maxlength="1" class="r9.c12" />
-        <input type="text" maxlength="1" class="r10.c1" />
-        <input type="text" maxlength="0" class="r10.c2 bleu" value="!" />
-        <input type="text" maxlength="0" class="r10.c3 bleu" value="!" />
-        <input type="text" maxlength="1" class="r10.c4" />
-        <input type="text" maxlength="1" class="r10.c5" />
-        <input type="text" maxlength="1" class="r10.c6" />
-        <input type="text" maxlength="1" class="r10.c7" />
-        <input type="text" maxlength="1" class="r10.c8" />
-        <input type="text" maxlength="1" class="r10.c9" />
-        <input type="text" maxlength="10" class="r10.c10 rouge" value="!" />
-        <input type="text" maxlength="1" class="r10.c11" />
-        <input type="text" maxlength="1" class="r10.c12" />
-        <input type="text" maxlength="1" class="r11.c1" />
-        <input type="text" maxlength="0" class="r11.c2 rouge" value="!" />
-        <input type="text" maxlength="1" class="r11.c3" />
-        <input type="text" maxlength="0" class="r11.c4 rouge" value="!" />
-        <input type="text" maxlength="1" class="r11.c5" />
-        <input type="text" maxlength="0" class="r11.c6 bleu" value="!" />
-        <input type="text" maxlength="1" class="r11.c7" />
-        <input type="text" maxlength="1" class="r11.c8" />
-        <input type="text" maxlength="1" class="r11.c9" />
-        <input type="text" maxlength="1" class="r11.c10" />
-        <input type="text" maxlength="1" class="r11.c11" />
-        <input type="text" maxlength="1" class="r11.c12" />
-        <input type="text" maxlength="1" class="r12.c1" />
-        <input type="text" maxlength="1" class="r12.c2" />
-        <input type="text" maxlength="1" class="r12.c3" />
-        <input type="text" maxlength="1" class="r12.c4" />
-        <input type="text" maxlength="1" class="r12.c5" />
-        <input type="text" maxlength="1" class="r12.c6" />
-        <input type="text" maxlength="1" class="r12.c7" />
-        <input type="text" maxlength="1" class="r12.c8" />
-        <input type="text" maxlength="1" class="r12.c9" />
-        <input type="text" maxlength="0" class="r12.c10 bleu" value="!" />
-        <input type="text" maxlength="1" class="r12.c11" />
-        <input type="text" maxlength="1" class="r12.c12" />
-      </div>
-      <form
-        action="https://formspree.io/xgeleljn"
-        class="emailcontainer"
-        method="POST"
+      <a class="linkreponse" href=""
+        >Veuillez télécharger la feuille réponse après avoir réussi.</a
       >
-        <input type="text" class="nom" value="Prenom et Nom" name="name" />
-        <input type="text" class="email" value="votre@email.com" name="email" />
-        <input type="submit" class="envoye" value="Envoyer le resultat" />
-      </form>
+      <div class="laccontainer">
+        <img src="http://tny.im/llp" alt="" class="icon" />
+        <div class=lacstjeancontainer">
+        <p class="lacstjean" style="font-size: 25px">
+          <b>Ville et région en vedette</b>
+        </p>
+        <p class="lacstjean" style="font-size:15px">
+          Ville de Saguenay et le Saguenay‒Lac-Saint-Jean
+        </p>
+      </div>
     </div>
+    <div class="hintcontainer">
+      <div class="row1">
+        <p class="hints" style="font-size: 12px"><b>Horizontal</b></p>
+        <p class="hints">
+          1- ..marin du Saguenay Saint-Laurent<br />
+          - bord de la rivière<br />
+          - abréviation familière de c'est correct
+        </p>
+        <p class="hints">
+          2-interjection d'étonnement ou d'indignation<br />
+          -ancienne ville du Saguenay classée quartier historique en 2014
+        </p>
+        <p class="hints">
+          3 - prénom d'un Tremblay, humoriste saguenéen<br />
+          - symbole du préfixe déca-<br />
+          - chef militaire ottoman
+        </p>
+        <p class="hints">
+          4 - net<br />
+          - une parmi d'autres à Saint-Gédéon (Lac-Saint-Jean)
+        </p>
+        <p class="hints">
+          5 - action d'enlever l'eau imprégnée dans un chiffon<br />
+          - jeu vidéo d'action, d'aventure et de survie
+        </p>
+        <p class="hints">6 - navré</p>
+        <p class="hints">
+          7 - apprendre à quelqu'un les bases d'un art<br />
+          - rapport de l'argent avec la guerre
+        </p>
+        <p class="hints">
+          8 - mot utilisé au terme d'une longue attente<br />
+          - interjection de surprise<br />
+          - sigle de l'ordre des Jésuites
+        </p>
+        <p class="hints">
+          9 - orchestre symphonique de renommée mondiale<br />
+          - utilise
+        </p>
+        <p class="hints">
+          10 - bande de terre entre deux plans d'eau<br />
+          - terminaison des verbes des 2 e et 3 e groupes
+        </p>
+        <p class="hints">
+          11 - il lui manque un s pour signifier un vif regret
+        </p>
+        <p class="hints">
+          12 - arrondissement urbain, ville de Saguenay<br />
+          - en matière de
+        </p>
+      </div>
+      <div class="row2">
+        <p class="hints" style="font-size: 12px"><b>Vertical</b></p>
+        <p class="hints">
+          1 - théâtre d'été à Saguenay<br />
+          - touche du clavier (abréviation)
+        </p>
+        <p class="hints">
+          2 - métal précieux au pluriel <br />
+          - abréviation d'un des huit vents collatéraux
+        </p>
+        <p class="hints">
+          3 - permet à un véhicule de rouler sur les routes<br />
+          - conifères décoratifs<br />
+          - initiales de la mairesse, ville de Saguenay
+        </p>
+        <p class="hints">4 - arrondissement ou hôtel, ville de Saguenay</p>
+        <p class="hints">
+          5 - titre honorifique <br />
+          - à la mode (anglicisme, langue familière) <br />
+          - pauvre (sans le ...)
+        </p>
+        <p class="hints">
+          6 - marquis célèbre<br />
+          - conjonction de liaison
+        </p>
+        <p class="hints">
+          7 - invalidité absolue et définitive (sigle)<br />
+          - dirige, mène<br />
+          - heure
+        </p>
+        <p class="hints">
+          8 - réelles<br />
+          - sentir l'air frais sur le pont d'un bateau
+        </p>
+        <p class="hints">
+          9 - électrovolt<br />
+          - pronom indéfini<br />
+          - elle récolte ce qu'elle...
+        </p>
+        <p class="hints">10 - température ayant les qualités souhaitables</p>
+        <p class="hints">
+          11 - poème lyrique<br />
+          - réseaux d'échanges en France<br />
+          - colère
+        </p>
+        <p class="hints">
+          12 - embarcation légère sur la rivière Saguenay<br />
+          - vallées glaciaires
+        </p>
+      </div>
+    </div>
+    <div class="v1-v12">
+      <div class="v1">v1</div>
+      <div class="v2">v2</div>
+      <div class="v3">v3</div>
+      <div class="v4">v4</div>
+      <div class="v5">v5</div>
+      <div class="v6">v6</div>
+      <div class="v7">v7</div>
+      <div class="v8">v8</div>
+      <div class="v9">v9</div>
+      <div class="v10">v10</div>
+      <div class="v11">v11</div>
+      <div class="v12">v12</div>
+    </div>
+    <div class="h1-h12">
+      <div class="h0"></div>
+      <div class="h1">H1</div>
+      <div class="h2">H2</div>
+      <div class="h3">H3</div>
+      <div class="h4">H4</div>
+      <div class="h5">H5</div>
+      <div class="h6">H6</div>
+      <div class="h7">H7</div>
+      <div class="h8">H8</div>
+      <div class="h9">H9</div>
+      <div class="h10">H10</div>
+      <div class="h11">H11</div>
+      <div class="h12">H12</div>
+    </div>
+    <div class="crossword-container">
+      <input type="text" maxlength="1" class="r1.c1" />
+      <input type="text" maxlength="1" class="r1.c2" />
+      <input type="text" maxlength="1" class="r1.c3" />
+      <input type="text" maxlength="1" class="r1.c4" />
+      <input
+        type="text"
+        maxlength="0"
+        class="r1.c5 bleu"
+        value="!"
+        readonly=""
+      />
+      <input type="text" maxlength="1" class="r1.c6" />
+      <input type="text" maxlength="1" class="r1.c7" />
+      <input type="text" maxlength="1" class="r1.c8" />
+      <input type="text" maxlength="1" class="r1.c9" />
+      <input type="text" maxlength="0" class="r1.c10 rouge" value="!" />
+      <input type="text" maxlength="1" class="r1.c11" />
+      <input type="text" maxlength="1" class="r1.c12" />
+      <input type="text" maxlength="1" class="r2.c1" />
+      <input type="text" maxlength="0" class="r2.c2 bleu" value="!" />
+      <input type="text" maxlength="1" class="r2.c3" />
+      <input type="text" maxlength="1" class="r2.c4" />
+      <input type="text" maxlength="0" class="r2.c5 rouge" value="!" />
+      <input type="text" maxlength="0" class="r2.c6 rouge" value="!" />
+      <input type="text" maxlength="1" class="r2.c7" />
+      <input type="text" maxlength="1" class="r2.c8" />
+      <input type="text" maxlength="1" class="r2.c9" />
+      <input type="text" maxlength="1" class="r2.c10" />
+      <input type="text" maxlength="1" class="r2.c11" />
+      <input type="text" maxlength="1" class="r2.c12" />
+      <input type="text" maxlength="1" class="r3.c1" />
+      <input type="text" maxlength="1" class="r3.c2" />
+      <input type="text" maxlength="1" class="r3.c3" />
+      <input type="text" maxlength="1" class="r3.c4" />
+      <input type="text" maxlength="1" class="r3.c5" />
+      <input type="text" maxlength="0" class="r3.c6 bleu" value="!" />
+      <input type="text" maxlength="1" class="r3.c7" />
+      <input type="text" maxlength="1" class="r3.c8" />
+      <input type="text" maxlength="0" class="r3.c9 bleu" value="!" />
+      <input type="text" maxlength="1" class="r3.c10" />
+      <input type="text" maxlength="1" class="r3.c11" />
+      <input type="text" maxlength="1" class="r3.c12" />
+      <input type="text" maxlength="1" class="r4.c1" />
+      <input type="text" maxlength="1" class="r4.c2" />
+      <input type="text" maxlength="1" class="r4.c3" />
+      <input type="text" maxlength="1" class="r4.c4" />
+      <input type="text" maxlength="1" class="r4.c5" />
+      <input type="text" maxlength="1" class="r4.c6" />
+      <input type="text" maxlength="0" class="r4.c7 rouge" value="!" />
+      <input type="text" maxlength="1" class="r4.c8" />
+      <input type="text" maxlength="1" class="r4.c9" />
+      <input type="text" maxlength="1" class="r4.c10" />
+      <input type="text" maxlength="0" class="r4.c11 rouge" value="!" />
+      <input type="text" maxlength="1" class="r4.c12" />
+      <input type="text" maxlength="1" class="r5.c1" />
+      <input type="text" maxlength="1" class="r5.c2" />
+      <input type="text" maxlength="1" class="r5.c3" />
+      <input type="text" maxlength="1" class="r5.c4" />
+      <input type="text" maxlength="1" class="r5.c5" />
+      <input type="text" maxlength="1" class="r5.c6" />
+      <input type="text" maxlength="1" class="r5.c7" />
+      <input type="text" maxlength="1" class="r5.c8" />
+      <input type="text" maxlength="0" class="r5.c9 bleu" value="!" />
+      <input type="text" maxlength="1" class="r5.c10" />
+      <input type="text" maxlength="1" class="r5.c11" />
+      <input type="text" maxlength="1" class="r5.c12" />
+      <input type="text" maxlength="1" class="r6.c1" />
+      <input type="text" maxlength="0" class="r6.c2 rouge" value="!" />
+      <input type="text" maxlength="0" class="r6.c3 bleu" value="!" />
+      <input type="text" maxlength="1" class="r6.c4" />
+      <input type="text" maxlength="0" class="r6.c5 rouge" value="!" />
+      <input type="text" maxlength="1" class="r6.c6" />
+      <input type="text" maxlength="1" class="r6.c7" />
+      <input type="text" maxlength="1" class="r6.c8" />
+      <input type="text" maxlength="1" class="r6.c9" />
+      <input type="text" maxlength="1" class="r6.c10" />
+      <input type="text" maxlength="1" class="r6.c11" />
+      <input type="text" maxlength="0" class="r6.c12 bleu" value="!" />
+      <input type="text" maxlength="1" class="r7.c1" />
+      <input type="text" maxlength="1" class="r7.c2" />
+      <input type="text" maxlength="1" class="r7.c3" />
+      <input type="text" maxlength="1" class="r7.c4" />
+      <input type="text" maxlength="1" class="r7.c5" />
+      <input type="text" maxlength="1" class="r7.c6" />
+      <input type="text" maxlength="1" class="r7.c7" />
+      <input type="text" maxlength="0" class="r7.c8 rouge" value="!" />
+      <input type="text" maxlength="1" class="r7.c9" />
+      <input type="text" maxlength="1" class="r7.c10" />
+      <input type="text" maxlength="1" class="r7.c11" />
+      <input type="text" maxlength="1" class="r7.c12" />
+      <input type="text" maxlength="1" class="r8.c1" />
+      <input type="text" maxlength="1" class="r8.c2" />
+      <input type="text" maxlength="1" class="r8.c3" />
+      <input type="text" maxlength="1" class="r8.c4" />
+      <input type="text" maxlength="1" class="r8.c5" />
+      <input type="text" maxlength="0" class="r8.c6 bleu" value="!" />
+      <input type="text" maxlength="1" class="r8.c7" />
+      <input type="text" maxlength="1" class="r8.c8" />
+      <input type="text" maxlength="0" class="r8.c9 bleu" value="!" />
+      <input type="text" maxlength="0" class="r8.c10 rouge" value="!" />
+      <input type="text" maxlength="1" class="r8.c11" />
+      <input type="text" maxlength="1" class="r8.c12" />
+      <input type="text" maxlength="0" class="r9.c1 rouge" value="!" />
+      <input type="text" maxlength="1" class="r9.c2" />
+      <input type="text" maxlength="1" class="r9.c3" />
+      <input type="text" maxlength="1" class="r9.c4" />
+      <input type="text" maxlength="0" class="r9.c5 bleu" value="!" />
+      <input type="text" maxlength="1" class="r9.c6" />
+      <input type="text" maxlength="0" class="r9.c7 rouge" value="!" />
+      <input type="text" maxlength="1" class="r9.c8" />
+      <input type="text" maxlength="1" class="r9.c9" />
+      <input type="text" maxlength="1" class="r9.c10" />
+      <input type="text" maxlength="0" class="r9.c11 bleu" value="!" />
+      <input type="text" maxlength="1" class="r9.c12" />
+      <input type="text" maxlength="1" class="r10.c1" />
+      <input type="text" maxlength="0" class="r10.c2 bleu" value="!" />
+      <input type="text" maxlength="0" class="r10.c3 bleu" value="!" />
+      <input type="text" maxlength="1" class="r10.c4" />
+      <input type="text" maxlength="1" class="r10.c5" />
+      <input type="text" maxlength="1" class="r10.c6" />
+      <input type="text" maxlength="1" class="r10.c7" />
+      <input type="text" maxlength="1" class="r10.c8" />
+      <input type="text" maxlength="1" class="r10.c9" />
+      <input type="text" maxlength="10" class="r10.c10 rouge" value="!" />
+      <input type="text" maxlength="1" class="r10.c11" />
+      <input type="text" maxlength="1" class="r10.c12" />
+      <input type="text" maxlength="1" class="r11.c1" />
+      <input type="text" maxlength="0" class="r11.c2 rouge" value="!" />
+      <input type="text" maxlength="1" class="r11.c3" />
+      <input type="text" maxlength="0" class="r11.c4 rouge" value="!" />
+      <input type="text" maxlength="1" class="r11.c5" />
+      <input type="text" maxlength="0" class="r11.c6 bleu" value="!" />
+      <input type="text" maxlength="1" class="r11.c7" />
+      <input type="text" maxlength="1" class="r11.c8" />
+      <input type="text" maxlength="1" class="r11.c9" />
+      <input type="text" maxlength="1" class="r11.c10" />
+      <input type="text" maxlength="1" class="r11.c11" />
+      <input type="text" maxlength="1" class="r11.c12" />
+      <input type="text" maxlength="1" class="r12.c1" />
+      <input type="text" maxlength="1" class="r12.c2" />
+      <input type="text" maxlength="1" class="r12.c3" />
+      <input type="text" maxlength="1" class="r12.c4" />
+      <input type="text" maxlength="1" class="r12.c5" />
+      <input type="text" maxlength="1" class="r12.c6" />
+      <input type="text" maxlength="1" class="r12.c7" />
+      <input type="text" maxlength="1" class="r12.c8" />
+      <input type="text" maxlength="1" class="r12.c9" />
+      <input type="text" maxlength="0" class="r12.c10 bleu" value="!" />
+      <input type="text" maxlength="1" class="r12.c11" />
+      <input type="text" maxlength="1" class="r12.c12" />
+    </div>
+    <form
+      action="https://formspree.io/xgeleljn"
+      class="emailcontainer"
+      method="POST"
+    >
+      <input type="text" class="nom" value="Prenom et Nom" name="name" />
+      <input type="text" class="email" value="votre@email.com" name="email" />
+      <input type="submit" class="envoye" value="Envoyer le resultat" />
+    </form>
+
     <script>
       const reponse = {
         r1: {
@@ -613,7 +654,6 @@
             if (checkWin() == true) {
               btnsend.disabled = false;
               link_reponse.href = "adresse du pdf";
-             
             }
           }
         })
